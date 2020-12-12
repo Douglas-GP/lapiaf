@@ -6,9 +6,10 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        color: Colors.amber,
-        child: Center(
-          child: Text('Douglas'),
-        ));
+      child: Image.asset(
+        'images/fondo.png',
+        fit: BoxFit.fill,
+      ),
+    );
   }
 }
