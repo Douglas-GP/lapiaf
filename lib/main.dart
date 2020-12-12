@@ -9,7 +9,6 @@ class MyApp extends StatelessWidget {
   //elemento raíz de la app
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setEnabledSystemUIOverlays([]);
     return MaterialApp(
       theme: ThemeData(
         visualDensity: VisualDensity.adaptivePlatformDensity,
@@ -31,6 +30,7 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
+    SystemChrome.setEnabledSystemUIOverlays([]);
     super.initState();
     Timer(
         Duration(seconds: 5),
